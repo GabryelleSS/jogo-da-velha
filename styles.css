@@ -29,11 +29,17 @@ header{
 }
 
 h1{
-    font-size: 22pt;
+    font-size: 20pt;
 }
 
-p, ul li{
+p{
     font-size: 12pt;
+}
+
+ul li{
+    font-size: 10pt;
+    padding: 1.5px;
+    list-style-type: none;
 }
 
 hr{
