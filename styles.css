@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Grid da página inteira */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header"
+    "regras-do-jogo"
+    "jogo-da-velha"
+    "footer";
+}
+
+header{
+    background-color: blue;
+    grid-area: header;
+    padding: 20px;
+}
+
+.regras-do-jogo{
+    background-color: red;
+    grid-area: regras-do-jogo;
+    padding: 20px;
+    
+}
+
+footer{
+    background-color: pink;
+    grid-area: footer;
+    padding: 20px;
+}
+
+/* Grid do jogo da velha */
+.jogo-da-velha{
+    background-color: #262626;
+    grid-area: jogo-da-velha;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "quad-um quad-dois quad-tres"
+    "quad-quatro quad-cinco quad-seis"
+    "quad-sete quad-oito quad-nove";
+    justify-content: center;
+    padding: 4vw 0;
+}
+
+section div{
+    width: 17vw;
+    height: 17vw;
+    cursor: pointer;
+}
+
+.quad-um{
+    grid-area: quad-um;
+    border-width: 0 3px 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #A9A9A9;
+}
+
+.quad-dois{
+    grid-area: quad-dois;
+    border-width: 0 3px 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #FFF8D8;
+    
+}
+
+.quad-tres{
+    grid-area: quad-tres;
+    border-width: 0 0 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #A9A9A9;
+}
+
+.quad-quatro{
+    grid-area: quad-quatro;
+    border-width: 0 3px 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #FFF8D8;
+}
+
+.quad-cinco{
+    grid-area: quad-cinco;
+    border-width: 0 3px 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #A9A9A9;
+}
+
+.quad-seis{
+    grid-area: quad-seis;
+    border-width: 0 0 3px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #FFF8D8;
+}
+
+.quad-sete{
+    grid-area: quad-sete;
+    border-width: 0 3px 0px 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #A9A9A9;
+    
+}
+
+.quad-oito{
+    grid-area: quad-oito;
+    border-width: 0 3px 0 0; 
+    border-style:  solid;
+    border-color: black;
+    background-color: #FFF8D8;
+}
+
+.quad-nove{
+    grid-area: quad-nove;
+    background-color: #A9A9A9;
+}
