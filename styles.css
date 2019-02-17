@@ -60,7 +60,7 @@ footer{
     grid-area: jogo-da-velha;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
     "quad-um quad-dois quad-tres"
     "quad-quatro quad-cinco quad-seis"
@@ -70,9 +70,9 @@ footer{
 }
 
 section div{
-    width: 17vw;
-    height: 17vw;
     cursor: pointer;
+    height: 17vw;
+    width: 17vw;
 }
 
 .quad-um{
@@ -82,6 +82,7 @@ section div{
     border-color: black;
     background-color: #A9A9A9;
 }
+
 
 .quad-dois{
     grid-area: quad-dois;
@@ -144,4 +145,12 @@ section div{
 .quad-nove{
     grid-area: quad-nove;
     background-color: #A9A9A9;
+}
+
+.efeito-quad{
+    background-color: red;
+}
+
+.efeito-quad-dois{
+    background-color: blue;
 }
