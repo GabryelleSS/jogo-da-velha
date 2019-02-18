@@ -6,9 +6,19 @@
 // 6 - 
 
 
-const jogorUm = "X";
-const jogordois = "O";
+const jogadorUm = 0;
+const jogadorDois = 1;
 let numeroDeJogadas = 0; 
+
+let verificacaoUm;
+let verificacaoDois;
+let verificacaoTres;
+let verificacaoQuatro;
+let verificacaoCinco;
+let verificacaoSeis;
+let verificacaoSete;
+let verificacaoOito;
+let verificacaoNove;
 
 let quadradoUm = document.querySelector('.quad-um');
 let quadradoDois = document.querySelector('.quad-dois');
@@ -20,43 +30,70 @@ let quadradoSete = document.querySelector('.quad-sete');
 let quadradoOito = document.querySelector('.quad-oito');
 let quadradoNove = document.querySelector('.quad-nove');
 
-const botaoQuadUm = function(){
 
+const botaoQuadUm = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoUm.classList.add('efeito-quad');
+        
+        verificacaoUm = jogadorUm;
+        console.log(verificacaoUm);
     }
     else{
-        quadradoUm.classList.add('efeito-quad-dois');   
+        quadradoUm.classList.add('efeito-quad-dois'); 
+        
+        verificacaoUm = jogadorDois;
+        console.log(verificacaoUm);  
     }
     numeroDeJogadas++;
+    alert(numeroDeJogadas);
 }
 
 const botaoQuadDois = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoDois.classList.add('efeito-quad');
+        
+        verificacaoDois = jogadorUm;
+        console.log(verificacaoDois);
     }
     else{
-        quadradoDois.classList.add('efeito-quad-dois');   
+        quadradoDois.classList.add('efeito-quad-dois'); 
+        
+        verificacaoDois = jogadorDois;
+        console.log(verificacaoDois);  
     }
     numeroDeJogadas++;
+    alert(numeroDeJogadas);
 }
 
 const botaoQuadTres = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoTres.classList.add('efeito-quad');
+        
+        verificacaoTres = jogadorUm;
+        console.log(verificacaoTres);
     }
     else{
         quadradoTres.classList.add('efeito-quad-dois');
+        
+        verificacaoTres = jogadorDois;
+        console.log(verificacaoTres);
     }
     numeroDeJogadas++;
+    alert(numeroDeJogadas);
 }
 
 const botaoQuadQuatro = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoQuatro.classList.add('efeito-quad');
+        
+        verificacaoQuatro = jogadorUm;
+        console.log(verificacaoQuatro);
     }
     else{
         quadradoQuatro.classList.add('efeito-quad-dois');
+        
+        verificacaoQuatro = jogadorDois;
+        console.log(verificacaoQuatro);
     }
     numeroDeJogadas++;
 }
@@ -64,9 +101,15 @@ const botaoQuadQuatro = function(){
 const botaoQuadCinco = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoCinco.classList.add('efeito-quad');
+        
+        verificacaoCinco = jogadorUm;
+        console.log(verificacaoCinco);
     }
     else{
         quadradoCinco.classList.add('efeito-quad-dois');
+        
+        verificacaoCinco = jogadorDois;
+        console.log(verificacaoCinco);
     }
     numeroDeJogadas++;
 }
@@ -74,9 +117,15 @@ const botaoQuadCinco = function(){
 const botaoQuadSeis = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoSeis.classList.add('efeito-quad');
+
+        verificacaoSeis = jogadorUm;
+        console.log(verificacaoSeis);
     }
     else{
         quadradoSeis.classList.add('efeito-quad-dois');
+        
+        verificacaoSeis = jogadorDois;
+        console.log(verificacaoSeis);
     }
     numeroDeJogadas++;
 }
@@ -84,9 +133,15 @@ const botaoQuadSeis = function(){
 const botaoQuadSete = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoSete.classList.add('efeito-quad');
+        
+        verificacaoSete = jogadorUm;
+        console.log(verificacaoSete);
     }
     else{
         quadradoSete.classList.add('efeito-quad-dois');
+        
+        verificacaoSete = jogadorDois;
+        console.log(verificacaoSete);
     }
     numeroDeJogadas++;
 }
@@ -94,9 +149,15 @@ const botaoQuadSete = function(){
 const botaoQuadOito = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoOito.classList.add('efeito-quad');
+        
+        verificacaoOito = jogadorUm;
+        console.log(verificacaoOito);
     }
     else{
         quadradoOito.classList.add('efeito-quad-dois');
+        
+        verificacaoOito = jogadorDois;
+        console.log(verificacaoOito);
     }
     numeroDeJogadas++;
 }
@@ -104,13 +165,23 @@ const botaoQuadOito = function(){
 const botaoQuadNove = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoNove.classList.add('efeito-quad');
+        
+        verificacaoNove = jogadorUm;
+        console.log(verificacaoNove);
     }
     else{
         quadradoNove.classList.add('efeito-quad-dois');
+        
+        verificacaoNove = jogadorDois;
+        console.log(verificacaoNove);
     }
     numeroDeJogadas++;
 }
 
+// if(quadradoUm && quadradoDois && quadradoTres == true){
+    //     alert('Eba')
+    // }
+    
 quadradoUm.onclick = botaoQuadUm;
 quadradoDois.onclick = botaoQuadDois;
 quadradoTres.onclick = botaoQuadTres;
@@ -120,3 +191,15 @@ quadradoSeis.onclick = botaoQuadSeis;
 quadradoSete.onclick = botaoQuadSete;
 quadradoOito.onclick = botaoQuadOito;
 quadradoNove.onclick = botaoQuadNove;
+    
+// for(numeroDeJogadas; numeroDeJogadas <= 9;){
+//     if(verificacaoUm == 0 && verificacaoDois == 0 && verificacaoTres == 0){
+//             alert('uhuuuu');
+//         }
+// }  
+
+// function verificacao(){
+//     if(verificacaoUm == 0 && verificacaoDois == 0 && verificacaoTres == 0){
+//         return alert('uhuuuu');
+// } 
+// }
