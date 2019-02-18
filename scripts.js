@@ -31,7 +31,6 @@ let quadradoOito = document.querySelector('.quad-oito');
 let quadradoNove = document.querySelector('.quad-nove');
 
 
-
 const botaoQuadUm = function(){
     if(numeroDeJogadas % 2 == 0){
         quadradoUm.classList.add('efeito-quad');
