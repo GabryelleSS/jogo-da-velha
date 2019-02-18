@@ -19,7 +19,12 @@ body{
 header{
     background-color: #262626;
     grid-area: header;
-    padding: 20px;
+    padding: 10px 20px;
+}
+
+img{
+    justify-content: space-between;
+    width: 100px;
 }
 
 .regras-do-jogo{
